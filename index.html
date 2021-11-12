@@ -157,7 +157,7 @@
                const len = ball.vel.len;
                ball.vel.x = -ball.vel.x;
                ball.vel.y += 300 * (Math.random() - .5);
-               ball.vel.len = len * 1.05;                                                                                                                                                            ///This game is the first game made by Mr. Yasuhito Hamanabe.///
+               ball.vel.len = len * 1.05;                                                                                                                                                            
            }
        }
 
@@ -236,7 +236,7 @@
                 this.players[0].pos.y -= 5;
             }
         }else if (downPressed) {
-            if(this.players[0].pos.y < 570){
+            if(this.players[0].pos.y < 350){
                 this.players[0].pos.y += 5;
             }
         }
@@ -246,7 +246,7 @@
                 this.players[1].pos.y -= 5;
             }
         }else if (downPressed1) {
-            if(this.players[1].pos.y < 570){
+            if(this.players[1].pos.y < 350){
                 this.players[1].pos.y += 5;
             }
         }
@@ -259,7 +259,7 @@
         document.addEventListener("keydown" , keyDownHandler , false);
         document.addEventListener("keyup" , keyUpHandler , false);
         document.addEventListener("keydown" , keySHandler , false);
-        document.addEventListener("keyup" , keyWHandler , false);　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　///SukinaIdol Nijinokonkisutado-ru. Nemoto Nagi. Gakkougaisogasikutenakanakaraibuniikenainogakuyasii.hayakuLiveikitaiyo-.///
+        document.addEventListener("keyup" , keyWHandler , false);　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
 
         canvas.addEventListener("click" , event => {
